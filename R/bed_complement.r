@@ -5,7 +5,7 @@
 #' 
 #' @family single-set-ops
 #' 
-#' @return \code{data_frame}
+#' @return `data_frame`
 #' 
 #' @examples 
 #' x <- tibble::tribble(

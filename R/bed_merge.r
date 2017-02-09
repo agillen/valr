@@ -1,7 +1,7 @@
 #' Merge overlapping intervals.
 #' 
 #' Operations can be performed on merged intervals by specifying name-value 
-#' pairs. Default \code{max_dist} of \code{0} means book-ended intervals are
+#' pairs. Default `max_dist` of `0` means book-ended intervals are
 #' merged.
 #' 
 #' @param x tbl of intervals
@@ -10,7 +10,7 @@
 #'   
 #' @template groups
 #'   
-#' @return \code{data_frame}
+#' @return `data_frame`
 #' @family single-set-ops
 #' @seealso 
 #' \url{http://bedtools.readthedocs.org/en/latest/content/tools/merge.html}

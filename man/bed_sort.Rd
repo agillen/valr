@@ -16,7 +16,7 @@ bed_sort(x, by_size = FALSE, by_chrom = FALSE, reverse = FALSE)
 \item{reverse}{reverse sort order}
 }
 \description{
-Multiple sorting parameters can be combined. note that \code{by_chrom} sorts 
+Multiple sorting parameters can be combined. note that \code{by_chrom} sorts
 within a chrom, not by chrom.
 }
 \details{
@@ -24,8 +24,9 @@ Sorting strips groups from the input.
 }
 \section{Deprecated function}{
  \code{bed_sort} has been deprecated. Instead
-  use \code{\link[dplyr]{arrange}}. See \link{sorting} for details.
+use \code{\link[dplyr:arrange]{dplyr::arrange()}}. See \link{sorting} for details.
 }
+
 \examples{
 x <- tibble::tribble(
    ~chrom, ~start, ~end,
@@ -55,4 +56,3 @@ bed_sort(x, by_size = TRUE, by_chrom = TRUE)
 \seealso{
 \url{http://bedtools.readthedocs.org/en/latest/content/tools/sort.html}
 }
-

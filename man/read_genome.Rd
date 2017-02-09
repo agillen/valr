@@ -7,12 +7,12 @@
 read_genome(path)
 }
 \arguments{
-\item{path}{containing chrom/contig names and sizes, 
+\item{path}{containing chrom/contig names and sizes,
 one-pair-per-line, tab-delimited}
 }
 \value{
-\code{data_frame} with colnames \code{chrom} and \code{size}, sorted 
-  by \code{size}
+\code{data_frame} with colnames \code{chrom} and \code{size}, sorted
+by \code{size}
 }
 \description{
 Genome files (UCSC "chromSize" files) contain chromosome name and size
@@ -35,4 +35,3 @@ read_genome('https://genome.ucsc.edu/goldenpath/help/hg19.chrom.sizes')
 Other read-funcs: \code{\link{read_bed}},
   \code{\link{read_vcf}}
 }
-

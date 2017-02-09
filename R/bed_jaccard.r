@@ -1,7 +1,7 @@
 #' Calculate jaccard statistics on two sets of intervals.
 #' 
-#' @details \code{bed_jaccard()} quantifies the extent of overlap between to sets of
-#' intervals. The Jaccard statistic takes values of \code{[0,1]} and is measured as:
+#' @details `bed_jaccard()` quantifies the extent of overlap between to sets of
+#' intervals. The Jaccard statistic takes values of `[0,1]` and is measured as:
 #' 
 #' \deqn{ J(x,y) = \frac{\mid x \bigcap y \mid}
 #'                      {\mid x \bigcup y \mid} = 
@@ -14,12 +14,12 @@
 #' @template stats
 #'   
 #' @family interval-stats
-#' @return \code{data_frame} with the following columns:
+#' @return `data_frame` with the following columns:
 #'   \itemize{ 
-#'     \item{\code{len_i}}{ length of the intersection}
-#'     \item{\code{len_u}}{ length of the union}
-#'     \item{\code{jaccard}}{ jaccard statistic} 
-#'     \item{\code{n_int}}{ number of intersecting intervals between x and y}
+#'     \item{`len_i`}{ length of the intersection}
+#'     \item{`len_u`}{ length of the union}
+#'     \item{`jaccard`}{ jaccard statistic} 
+#'     \item{`n_int`}{ number of intersecting intervals between x and y}
 #'     }
 #'   
 #' @seealso

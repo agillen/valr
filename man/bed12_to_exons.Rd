@@ -10,17 +10,16 @@ bed12_to_exons(x)
 \item{x}{tbl in BED12 format}
 }
 \description{
-After conversion to BED6 format, the \code{score} column contains the exon 
+After conversion to BED6 format, the \code{score} column contains the exon
 number, with respect to strand (i.e., the first exon for \code{-} strand
 genes will have larger start and end coordinates).
 }
 \examples{
 bed12_path <- valr_example('mm9.bed12.gz')
 x <- read_bed12(bed12_path)
-bed12_to_exons(x) 
+bed12_to_exons(x)
 
 }
 \seealso{
 Other utils: \code{\link{bed_makewindows}}
 }
-

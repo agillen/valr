@@ -15,23 +15,24 @@ bed_reldist(x, y, detail = FALSE)
 }
 \value{
 If \code{detail = FALSE}, a \code{data_frame} that summarizes
- calcuclated \code{.reldist} values with the following columns:
-  \itemize{
-    \item{\code{.reldist}}{ relative distance metric}
-    \item{\code{.counts}}{ number of metric observations}
-    \item{\code{.total}}{ total observations}
-    \item{\code{.freq}}{ frequency of observation}}
-    
-    If \code{detail = TRUE}, a new \code{.reldist} column reports the relative
-    distance for each input \code{x} interval.
+calcuclated \code{.reldist} values with the following columns:
+\itemize{
+\item \code{.reldist} relative distance metric
+\item \code{.counts} number of metric observations
+\item \code{total} total observations
+\item \code{.freq} frequency of observation
+}
+
+If \code{detail = TRUE}, a new \code{.reldist} column reports the relative
+distance for each input \code{x} interval.
 }
 \description{
 Compute relative distances between intervals.
 }
 \details{
-Interval statistics can be used in combination with 
-  \code{\link[dplyr]{group_by}} and \code{\link[dplyr]{do}} to calculate 
-  statistics for subsets of data. See \code{vignette('interval-stats')} for
+Interval statistics can be used in combination with
+  [dplyr::group_by()] and [dplyr::do()] to calculate
+  statistics for subsets of data. See `vignette('interval-stats')` for
   examples.
 }
 \examples{
@@ -58,4 +59,3 @@ Other interval-stats: \code{\link{bed_absdist}},
   \code{\link{bed_fisher}}, \code{\link{bed_jaccard}},
   \code{\link{bed_projection}}
 }
-

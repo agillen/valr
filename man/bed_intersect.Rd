@@ -19,20 +19,20 @@ bed_intersect(x, y, invert = FALSE, suffix = c(".x", ".y"), ...)
 }
 \value{
 a \code{data_frame} with original columns from \code{x} and \code{y},
-  suffixed with \code{.x} and \code{.y}, and a new \code{.overlap} column 
-  with the extent of overlap for the intersecting intervals.
+suffixed with \code{.x} and \code{.y}, and a new \code{.overlap} column
+with the extent of overlap for the intersecting intervals.
 }
 \description{
-Report intersecting intervals from \code{x} and \code{y} tbls. Book-ended 
-intervals (or "touching" intervals) have \code{.overlap} values of \code{0}) 
+Report intersecting intervals from \code{x} and \code{y} tbls. Book-ended
+intervals (or "touching" intervals) have \code{.overlap} values of \code{0})
 in the output.
 }
 \details{
-input tbls are grouped by \code{chrom} by default, and additional
-  groups can be added using \code{\link[dplyr]{group_by}}. For example,
-  grouping by \code{strand} will constrain analyses to the same strand. To
-  compare opposing strands across two tbls, strands on the \code{y} tbl can
-  first be inverted using \code{\link{flip_strands}}.
+input tbls are grouped by `chrom`` by default, and additional
+  groups can be added using [dplyr::group_by()]. For example,
+  grouping by `strand` will constrain analyses to the same strand. To
+  compare opposing strands across two tbls, strands on the `y`` tbl can
+  first be inverted using [flip_strands].
 }
 \examples{
 x <- tibble::tribble(
@@ -77,4 +77,3 @@ Other multi-set-ops: \code{\link{bed_closest}},
   \code{\link{bed_coverage}}, \code{\link{bed_map}},
   \code{\link{bed_subtract}}, \code{\link{bed_window}}
 }
-

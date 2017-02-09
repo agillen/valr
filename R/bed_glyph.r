@@ -6,7 +6,7 @@
 #' @param label colname in output to use for label values
 #' @param res_name name of result in output
 #'   
-#' @return a \code{ggplot} object
+#' @return a `ggplot` object
 #'   
 #' @examples
 #' x <- tibble::tribble(

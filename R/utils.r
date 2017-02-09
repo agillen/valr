@@ -13,9 +13,9 @@ valr_example <- function(path) {
 
 #' reformat tbl column ordering based upon another tbl
 #' 
-#' \code{format_bed} returns a tbl whose columns are ordered by another tbl. 
-#' The \code{x} tbl columns are reordered based on the \code{y} columns ordering.
-#' If there are \code{x} columns that do not exist in \code{y} they are moved to the last column. 
+#' `format_bed` returns a tbl whose columns are ordered by another tbl. 
+#' The `x` tbl columns are reordered based on the `y` columns ordering.
+#' If there are `x` columns that do not exist in `y` they are moved to the last column. 
 #'
 #'  
 #' @param x tbl of intervals
@@ -49,13 +49,13 @@ format_bed <- function(x, y) {
 
 #' Identify groups shared between to tbls
 #'
-#' Identify minimum shared groups between \code{x} and \code{y} tbls. Returns
-#' \code{NULL} if there are no shared groups.
+#' Identify minimum shared groups between `x` and `y` tbls. Returns
+#' `NULL` if there are no shared groups.
 #'
 #' @param x tbl of intervals
 #' @param y tbl of intervals
 #'  
-#' @return \code{list} of groups or \code{NULL}
+#' @return `list` of groups or `NULL`
 #'  
 #' @examples
 #' x <- tibble::tribble(

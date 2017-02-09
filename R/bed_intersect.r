@@ -1,17 +1,17 @@
 #' Identify intersecting intervals.
 #' 
-#' Report intersecting intervals from \code{x} and \code{y} tbls. Book-ended 
-#' intervals (or "touching" intervals) have \code{.overlap} values of \code{0}) 
+#' Report intersecting intervals from `x` and `y` tbls. Book-ended 
+#' intervals (or "touching" intervals) have `.overlap` values of `0`) 
 #' in the output.
 #' 
 #' @param x tbl of intervals
 #' @param y tbl of intervals
-#' @param invert report \code{x} intervals not in \code{y}
+#' @param invert report `x` intervals not in `y`
 #' @param suffix colname suffixes in output
 #' @param ... extra arguments (not used)
 #'   
-#' @return a \code{data_frame} with original columns from \code{x} and \code{y},
-#'   suffixed with \code{.x} and \code{.y}, and a new \code{.overlap} column 
+#' @return a `data_frame` with original columns from `x` and `y`,
+#'   suffixed with `.x` and `.y`, and a new `.overlap` column 
 #'   with the extent of overlap for the intersecting intervals.
 #'   
 #' @template groups

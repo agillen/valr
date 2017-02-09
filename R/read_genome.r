@@ -7,8 +7,8 @@
 #' @param path containing chrom/contig names and sizes, 
 #'   one-pair-per-line, tab-delimited
 #'   
-#' @return \code{data_frame} with colnames \code{chrom} and \code{size}, sorted 
-#'   by \code{size}
+#' @return `data_frame` with colnames `chrom` and `size`, sorted 
+#'   by `size`
 #'   
 #' @note URLs to genome files can also be used.
 #'   
@@ -33,13 +33,13 @@ read_genome <- function(path) {
 #' Select intervals bounded by a genome.
 #' 
 #' Used to remove out-of-bounds intervals, or trim interval coordinates using a
-#' \code{genome}.
+#' `genome`.
 #' 
 #' @param x a tbl of intervals
 #' @param genome a tbl of chrom sizes
 #' @param trim adjust coordinates for out-of-bounds intervals
 #'   
-#' @return \code{data_frame}
+#' @return `data_frame`
 #'   
 #' @examples
 #' x <- tibble::tribble(

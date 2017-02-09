@@ -8,7 +8,7 @@
 #' @param within shuffle within chromosomes
 #' @param seed seed for reproducible intervals
 #' 
-#' @return \code{data_frame}
+#' @return `data_frame`
 #' @family single-set-ops
 #' @seealso \url{http://bedtools.readthedocs.io/en/latest/content/tools/shuffle.html}
 #' 

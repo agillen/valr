@@ -17,25 +17,25 @@ bed_projection(x, y, genome, by_chrom = FALSE)
 }
 \value{
 \code{data_frame} with the following columns:
-  \itemize{ 
-    \item{\code{chrom}} {the name of chromosome tested if \code{by_chrom = TRUE},
-     otherwise has a value of \code{'whole_genome'}}
-    \item{\code{p.value}} {p-value from a binomial test. p-values > 0.5
-     will be reported as 1 - p-value and \code{lower_tail} will be \code{FALSE}}
-    \item{\code{obs_exp_ratio}} {ratio of observed to expected overlap frequency}
-    \item{\code{lower_tail}} a boolean column. {\code{TRUE} indicates the observed overlaps
-     is in the lower tail of the distribution (e.g., less overlap than expected); \code{FALSE}
-     indicates that the observed overlaps are in the upper tail of the distribution
-     (e.g., more overlap than expected)}
-    }
+\itemize{
+\item \code{chrom} the name of chromosome tested if \code{by_chrom = TRUE},
+otherwise has a value of \code{'whole_genome'}
+\item \code{p.value} p-value from a binomial test. p-values > 0.5
+will be reported as 1 - p-value and \code{lower_tail} will be \code{FALSE}
+\item \code{obs_exp_ratio} ratio of observed to expected overlap frequency
+\item \code{lower_tail} a boolean column. \code{TRUE} indicates the observed overlaps
+is in the lower tail of the distribution (e.g., less overlap than expected); \code{FALSE}
+indicates that the observed overlaps are in the upper tail of the distribution
+(e.g., more overlap than expected)
+}
 }
 \description{
 Projection test for query interval overlap.
 }
 \details{
-Interval statistics can be used in combination with 
-  \code{\link[dplyr]{group_by}} and \code{\link[dplyr]{do}} to calculate 
-  statistics for subsets of data. See \code{vignette('interval-stats')} for
+Interval statistics can be used in combination with
+  [dplyr::group_by()] and [dplyr::do()] to calculate
+  statistics for subsets of data. See `vignette('interval-stats')` for
   examples.
 }
 \examples{
@@ -62,7 +62,7 @@ y <- tibble::tribble(
  "chr1", 1100,   1200,
  "chr1", 1400,   1600,
  "chr2", 200,    1500
-) 
+)
 
 bed_projection(x, y, genome)
 bed_projection(x, y, genome, by_chrom = TRUE)
@@ -75,4 +75,3 @@ Other interval-stats: \code{\link{bed_absdist}},
   \code{\link{bed_fisher}}, \code{\link{bed_jaccard}},
   \code{\link{bed_reldist}}
 }
-

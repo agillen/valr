@@ -5,10 +5,10 @@
 #' @param x tbl of intervals 
 #' @param genome chromosome sizes
 #' @param size number of bases to shift. postive numbers shift right, negative shift left. 
-#' @param fraction define \code{size} as a fraction of interval
+#' @param fraction define `size` as a fraction of interval
 #' @param trim adjust coordinates for out-of-bounds intervals
 #' 
-#' @return \code{data_frame}
+#' @return `data_frame`
 #'
 #' @family single-set-ops 
 #' @seealso \url{http://bedtools.readthedocs.org/en/latest/content/tools/shift.html}

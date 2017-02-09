@@ -1,7 +1,7 @@
 #' Calculate summaries and statistics from overlapping intervals.
 #' 
-#' Used to apply functions like \code{\link{min}()}, \code{\link{count}()}, 
-#' \code{\link{concat}()} to intersecting intervals. Book-ended intervals are 
+#' Used to apply functions like [min()], [count()], 
+#' [concat()] to intersecting intervals. Book-ended intervals are 
 #' not reported by default, but can be included by setting \code{min_overlap =
 #' 0}.
 #' 
@@ -11,7 +11,7 @@
 #'   
 #' @template groups
 #'   
-#' @return \code{data_frame}
+#' @return `data_frame`
 #'   
 #' @family multi-set-ops
 #' @seealso 

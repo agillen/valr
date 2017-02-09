@@ -1,6 +1,6 @@
 #' Fisher's test on number of shared and unique intervals.
 #' 
-#' Borrows from the \code{BEDtools} implementation.
+#' Borrows from the `BEDtools` implementation.
 #' 
 #' @param x tbl of intervals
 #' @param y tbl of intervals
@@ -12,7 +12,7 @@
 #' @seealso
 #'   \url{http://bedtools.readthedocs.org/en/latest/content/tools/fisher.html}
 #'   
-#' @return \code{data_frame}
+#' @return `data_frame`
 #'   
 #' @examples 
 #' x <- tibble::tribble(

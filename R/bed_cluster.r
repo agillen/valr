@@ -1,7 +1,7 @@
 #' Cluster neighboring intervals.
 #' 
-#' Output contains an \code{.id} column that can be used in downstream grouping
-#' operations. Default \code{max_dist = 0} means that both overlapping and
+#' Output contains an `.id` column that can be used in downstream grouping
+#' operations. Default `max_dist = 0` means that both overlapping and
 #' book-ended intervals will be clustered.
 #' 
 #' @param x tbl of intervals
@@ -9,7 +9,7 @@
 #'   
 #' @template groups
 #'   
-#' @return \code{data_frame} with \code{.id} column for clustered intervals.
+#' @return `data_frame` with `.id` column for clustered intervals.
 #'   
 #' @family single-set-ops
 #' @seealso 

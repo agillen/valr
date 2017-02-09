@@ -1,11 +1,11 @@
 #' Calculate interval spacing.
 #' 
 #' Overlapping intervals are merged. Spacing for the first interval of each
-#' chromosome is undefined (\code{NA}).
+#' chromosome is undefined (`NA`).
 #' 
 #' @param x tbl of intervals
 #'   
-#' @return \code{data_frame} with \code{.spacing} column.
+#' @return `data_frame` with `.spacing` column.
 #' 
 #' @examples
 #' x <- tibble::tribble(

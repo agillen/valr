@@ -4,9 +4,9 @@
 \alias{sorting}
 \title{Sorting tbls of intervals}
 \description{
-Interval tbls can be sorted using \code{\link[dplyr]{arrange}}. See examples 
+Interval tbls can be sorted using \code{\link[dplyr:arrange]{dplyr::arrange()}}. See examples
 for sorting by chrom and start, and by size using
-\code{\link[dplyr]{mutate}}.
+\code{\link[dplyr:mutate]{dplyr::mutate()}}.
 }
 \examples{
 
@@ -17,7 +17,7 @@ x <- tibble::tribble(
   'chr1', 1,      100,
   'chr2', 500,    1000,
   'chr2', 100,    300
-) 
+)
 
 # sort by start
 dplyr::arrange(x, start)
@@ -33,4 +33,3 @@ x <- dplyr::mutate(x, .size = end - start)
 dplyr::arrange(x, .size)
 
 }
-

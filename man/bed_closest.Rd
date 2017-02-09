@@ -20,26 +20,27 @@ bed_closest(x, y, overlap = TRUE, suffix = c(".x", ".y"),
 }
 \value{
 \code{data_frame} with additional columns:
-  \itemize{
-    \item{\code{.dist}}{ distance to closest interval}
-    \item{\code{.overlap}}{ overlap with closest interval}
-  }
+\itemize{
+\item \code{.dist} distance to closest interval
+\item \code{.overlap} overlap with closest interval
+}
 }
 \description{
 Identify closest intervals.
 }
 \details{
-input tbls are grouped by \code{chrom} by default, and additional
-  groups can be added using \code{\link[dplyr]{group_by}}. For example,
-  grouping by \code{strand} will constrain analyses to the same strand. To
-  compare opposing strands across two tbls, strands on the \code{y} tbl can
-  first be inverted using \code{\link{flip_strands}}.
+input tbls are grouped by `chrom`` by default, and additional
+  groups can be added using [dplyr::group_by()]. For example,
+  grouping by `strand` will constrain analyses to the same strand. To
+  compare opposing strands across two tbls, strands on the `y`` tbl can
+  first be inverted using [flip_strands].
 
 \code{dist} can take one of the following values:
-  \itemize{
-    \item{\code{genome}}{ negative distances signify upstream intervals (default)}
-    \item{\code{strand}}{ upstream defined based on strand}
-    \item{\code{abs}}{ absolute value of distance}}
+\itemize{
+\item \code{genome} negative distances signify upstream intervals (default)
+\item \code{strand} upstream defined based on strand
+\item \code{abs} absolute value of distance
+}
 }
 \examples{
 x <- tibble::tribble(
@@ -52,14 +53,14 @@ y <- tibble::tribble(
   'chr1',      25,      50,
   'chr1',     140,     175
 )
- 
+
 bed_glyph(bed_closest(x, y))
 
 x <- tibble::tribble(
 ~chrom, ~start, ~end,
 "chr1", 500,    600,
 "chr2", 5000,   6000
-) 
+)
 
 y <- tibble::tribble(
 ~chrom, ~start, ~end,
@@ -67,7 +68,7 @@ y <- tibble::tribble(
 "chr1", 150,    200,
 "chr1", 550,    580,
 "chr2", 7000,   8500
-) 
+)
 
 bed_closest(x, y)
 
@@ -81,4 +82,3 @@ Other multi-set-ops: \code{\link{bed_coverage}},
   \code{\link{bed_intersect}}, \code{\link{bed_map}},
   \code{\link{bed_subtract}}, \code{\link{bed_window}}
 }
-

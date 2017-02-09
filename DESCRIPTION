@@ -36,6 +36,7 @@ Suggests:
     RMySQL,
     purrr
 VignetteBuilder: knitr
-RoxygenNote: 5.0.1
+RoxygenNote: 6.0.0
+Roxygen: list(markdown = TRUE)
 URL: http://github.com/rnabioco/valr/
 BugReports: https://github.com/rnabioco/valr/issues

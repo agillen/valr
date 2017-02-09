@@ -21,16 +21,16 @@ bed_makewindows(x, genome, win_size = 0, step_size = 0, num_win = 0,
 \item{reverse}{reverse window numbers}
 }
 \value{
-\code{data_frame} with \code{.win_id} column that contains a numeric 
-  identifier for the window.
+\code{data_frame} with \code{.win_id} column that contains a numeric
+identifier for the window.
 }
 \description{
 Divide intervals into new sub-intervals ("windows").
 }
 \note{
-The \code{name} and \code{.win_id} columns can be used to create new 
-  interval names (see 'namenum' example below) or in subsequent 
-  \code{group_by} operations (see vignette).
+The \code{name} and \code{.win_id} columns can be used to create new
+interval names (see 'namenum' example below) or in subsequent
+\code{group_by} operations (see vignette).
 }
 \examples{
 genome <- tibble::tribble(
@@ -65,4 +65,3 @@ dplyr::mutate(wins, namenum = stringr::str_c(name, '_', .win_id))
 \seealso{
 Other utils: \code{\link{bed12_to_exons}}
 }
-

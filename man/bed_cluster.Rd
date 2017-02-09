@@ -20,11 +20,11 @@ operations. Default \code{max_dist = 0} means that both overlapping and
 book-ended intervals will be clustered.
 }
 \details{
-input tbls are grouped by \code{chrom} by default, and additional
-  groups can be added using \code{\link[dplyr]{group_by}}. For example,
-  grouping by \code{strand} will constrain analyses to the same strand. To
-  compare opposing strands across two tbls, strands on the \code{y} tbl can
-  first be inverted using \code{\link{flip_strands}}.
+input tbls are grouped by `chrom`` by default, and additional
+  groups can be added using [dplyr::group_by()]. For example,
+  grouping by `strand` will constrain analyses to the same strand. To
+  compare opposing strands across two tbls, strands on the `y`` tbl can
+  first be inverted using [flip_strands].
 }
 \examples{
 x <- tibble::tribble(
@@ -58,4 +58,3 @@ Other single-set-ops: \code{\link{bed_complement}},
   \code{\link{bed_random}}, \code{\link{bed_shift}},
   \code{\link{bed_shuffle}}, \code{\link{bed_slop}}
 }
-

@@ -6,11 +6,11 @@
 #' @param left number of bases on left side
 #' @param right number of bases on right side
 #' @param fraction define flanks based on fraction of interval length
-#' @param strand define \code{left} and \code{right} based on strand
+#' @param strand define `left` and `right` based on strand
 #' @param trim adjust coordinates for out-of-bounds intervals
 #' @param ... extra arguments (not used)
 #' 
-#' @return \code{data_frame}
+#' @return `data_frame`
 #' 
 #' @family single-set-ops
 #' @seealso

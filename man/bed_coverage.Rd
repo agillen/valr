@@ -14,24 +14,23 @@ bed_coverage(x, y, ...)
 \item{...}{extra arguments (not used)}
 }
 \value{
-original \code{x} \code{data_frame} with the following additional
-  columns:
-\itemize{ 
-  \item{\code{.ints}}{ number of x intersections}
-  \item{\code{.cov}}{ per-base coverage of x intervals}
-  \item{\code{.len}}{ total length of y intervals covered by x intervals} 
-  \item{\code{.frac}}{ .len scaled by total of y intervals}
-  }
+\code{x} with the following additional columns:
+\itemize{
+\item \code{.ints} number of x intersections
+\item \code{.cov} per-base coverage of x intervals
+\item \code{.len}: total length of y intervals covered by x intervals
+\item \code{.frac} `.len`` scaled by total of y intervals
+}
 }
 \description{
 Compute coverage of intervals.
 }
 \details{
-input tbls are grouped by \code{chrom} by default, and additional
-  groups can be added using \code{\link[dplyr]{group_by}}. For example,
-  grouping by \code{strand} will constrain analyses to the same strand. To
-  compare opposing strands across two tbls, strands on the \code{y} tbl can
-  first be inverted using \code{\link{flip_strands}}.
+input tbls are grouped by `chrom`` by default, and additional
+  groups can be added using [dplyr::group_by()]. For example,
+  grouping by `strand` will constrain analyses to the same strand. To
+  compare opposing strands across two tbls, strands on the `y`` tbl can
+  first be inverted using [flip_strands].
 }
 \note{
 Book-ended intervals are counted as overlapping.
@@ -54,7 +53,7 @@ y <- tibble::tribble(
 )
 
 bed_coverage(x, y)
- 
+
 }
 \seealso{
 \url{http://bedtools.readthedocs.org/en/latest/content/tools/coverage.html}
@@ -63,4 +62,3 @@ Other multi-set-ops: \code{\link{bed_closest}},
   \code{\link{bed_intersect}}, \code{\link{bed_map}},
   \code{\link{bed_subtract}}, \code{\link{bed_window}}
 }
-

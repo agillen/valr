@@ -1,10 +1,10 @@
 #' Subtract intervals.
 #' 
-#' Subtract \code{y} intervals from \code{x} intervals.
+#' Subtract `y` intervals from `x` intervals.
 #' 
 #' @param x tbl of intervals
 #' @param y tbl of intervals
-#' @param any remove any \code{x} intervals that overlap \code{y}
+#' @param any remove any `x` intervals that overlap `y`
 #' 
 #' @template groups
 #' 

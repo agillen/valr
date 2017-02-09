@@ -3,8 +3,8 @@
 \name{bed_map}
 \alias{bed_map}
 \alias{concat}
-\alias{values}
 \alias{values_unique}
+\alias{values}
 \title{Calculate summaries and statistics from overlapping intervals.}
 \usage{
 bed_map(x, y, ..., invert = FALSE, suffix = c(".x", ".y"),
@@ -37,17 +37,17 @@ values(.data, sep = ",")
 \code{data_frame}
 }
 \description{
-Used to apply functions like \code{\link{min}()}, \code{\link{count}()}, 
-\code{\link{concat}()} to intersecting intervals. Book-ended intervals are 
+Used to apply functions like \code{\link[=min]{min()}}, \code{\link[=count]{count()}},
+\code{\link[=concat]{concat()}} to intersecting intervals. Book-ended intervals are
 not reported by default, but can be included by setting \code{min_overlap =
 0}.
 }
 \details{
-input tbls are grouped by \code{chrom} by default, and additional
-  groups can be added using \code{\link[dplyr]{group_by}}. For example,
-  grouping by \code{strand} will constrain analyses to the same strand. To
-  compare opposing strands across two tbls, strands on the \code{y} tbl can
-  first be inverted using \code{\link{flip_strands}}.
+input tbls are grouped by `chrom`` by default, and additional
+  groups can be added using [dplyr::group_by()]. For example,
+  grouping by `strand` will constrain analyses to the same strand. To
+  compare opposing strands across two tbls, strands on the `y`` tbl can
+  first be inverted using [flip_strands].
 }
 \examples{
 x <- tibble::tribble(
@@ -107,4 +107,3 @@ Other multi-set-ops: \code{\link{bed_closest}},
   \code{\link{bed_coverage}}, \code{\link{bed_intersect}},
   \code{\link{bed_subtract}}, \code{\link{bed_window}}
 }
-

@@ -2,7 +2,7 @@
 #'
 #' @inheritParams bed_flank
 #' 
-#' @return \code{data_frame}
+#' @return `data_frame`
 #' 
 #' @family single-set-ops
 #' @seealso
