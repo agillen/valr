@@ -109,15 +109,15 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p><code>data_frame</code> with the following columns:
-  <ul>
+<ul>
 <li><code>len_i</code> length of the intersection
-    </li>
+</li>
 <li><code>len_u</code> length of the union
-    </li>
-<li><code>jaccard</code> jaccard statistic 
-    </li>
+</li>
+<li><code>jaccard</code> jaccard statistic
+</li>
 <li><code>n_int</code> number of intersecting intervals between x and y
-    </li>
+</li>
 </ul></p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
@@ -128,9 +128,9 @@ intervals. The Jaccard statistic takes values of <code>[0,1]</code> and is measu
                      {\mid x \bigcup y \mid} = 
                 \frac{\mid x \bigcap y \mid}
                      {\mid x \mid + \mid y \mid - \mid x \bigcap y \mid} $$</p>
-    <p>Interval statistics can be used in combination with 
-  <code><a href='http://www.rdocumentation.org/packages/dplyr/topics/group_by'>group_by</a></code> and <code><a href='http://www.rdocumentation.org/packages/dplyr/topics/do'>do</a></code> to calculate 
-  statistics for subsets of data. See <code>vignette(&#39;interval-stats&#39;)</code> for
+    <p>Interval statistics can be used in combination with
+  [dplyr::group_by()] and [dplyr::do()] to calculate
+  statistics for subsets of data. See `vignette(&#39;interval-stats&#39;)` for
   examples.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>

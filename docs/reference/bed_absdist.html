@@ -111,23 +111,23 @@ the closest midpoints of <code>y</code> intervals.</p>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p><code>data_frame</code> with <code>.absdist</code> and <code>.absdist_scaled</code> 
-  columns.</p>
+    <p><code>data_frame</code> with <code>.absdist</code> and <code>.absdist_scaled</code>
+columns.</p>
     
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
     <p>Absolute distances are scaled by the inter-reference gap for the
-  chromosome as follows. For <code>Q</code> query points and <code>R</code> reference
-  points on a chromosome, scale the distance for each query point <code>i</code> to
-  the closest reference point by the inter-reference gap for each chromosome.
-  If an <code>x</code> interval has no matching <code>y</code> chromosome,
-  <code>.absdist</code> is <code>NA</code>.</p>
+chromosome as follows. For <code>Q</code> query points and <code>R</code> reference
+points on a chromosome, scale the distance for each query point <code>i</code> to
+the closest reference point by the inter-reference gap for each chromosome.
+If an <code>x</code> interval has no matching <code>y</code> chromosome,
+<code>.absdist</code> is <code>NA</code>.</p>
     <p>$$d_i(x,y) = min_k(|q_i - r_k|)\frac{R}{Length\ of\ chromosome}$$</p>
-    <p>Both absolute and scaled distances are reported as <code>.absdist</code> and 
-  <code>.absdist_scaled</code>.</p>
-    <p>Interval statistics can be used in combination with 
-  <code><a href='http://www.rdocumentation.org/packages/dplyr/topics/group_by'>group_by</a></code> and <code><a href='http://www.rdocumentation.org/packages/dplyr/topics/do'>do</a></code> to calculate 
-  statistics for subsets of data. See <code>vignette(&#39;interval-stats&#39;)</code> for
+    <p>Both absolute and scaled distances are reported as <code>.absdist</code> and
+<code>.absdist_scaled</code>.</p>
+    <p>Interval statistics can be used in combination with
+  [dplyr::group_by()] and [dplyr::do()] to calculate
+  statistics for subsets of data. See `vignette(&#39;interval-stats&#39;)` for
   examples.</p>
     
     <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
