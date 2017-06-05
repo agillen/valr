@@ -26,7 +26,7 @@
 #' @importFrom readr read_tsv col_integer col_character col_double
 #' @importFrom stringr str_replace str_split str_c str_length
 #' @importFrom lazyeval lazy_dots
-#' @importFrom utils head tail read.table
+#' @importFrom utils head tail
 #' @importFrom stats fisher.test na.omit
 #' @import ggplot2
 #' @import dplyr
