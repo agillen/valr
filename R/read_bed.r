@@ -29,15 +29,17 @@
 read_bed <- function(filename, n_fields = NULL, col_types = bed12_coltypes,
                      sort = TRUE, ...) {
 
+  bed_raw <- read_file(filename)
+
   if (missing(n_fields)) {
-    n_fields <- ncol(read.table(filename, nrows = 5, sep="\t"))
+    n_fields <- ncol(readr::read_tsv(bed_raw,n_max = 5))
     message(glue::glue("n_fields set automatically to {n_fields}"))
   }
 
   coltypes <- col_types[1:n_fields]
   colnames <- names(coltypes)
 
-  bed_raw <- readr::read_tsv(filename, col_names = colnames, col_types = coltypes, ...)
+  bed_raw <- readr::read_tsv(bed_raw, col_names = colnames, col_types = coltypes, ...)
   out <- tbl_interval(bed_raw)
 
   if (sort) out <- arrange(out, chrom, start)
